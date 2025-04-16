@@ -8,6 +8,7 @@ LDFLAGS =
 # Directories
 SRC_DIR = src
 BUILD_DIR = build
+INCLUDE_DIR = include
 BIN_DIR = bin
 DOCS_DIR = docs
 
@@ -28,15 +29,15 @@ directories:
 
 # Compile executable file
 $(TARGET): $(OBJS)
-	$(CXX) $(LDFLAGS) $^ -o $@
+	$(CXX) $(LDFLAGS) -I$(INCLUDE_DIR) $^ -o $@
 
 # Compile .c files
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -I$(INCLUDE_DIR) -c $< -o $@
 
 # Compile .cpp files
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -I$(INCLUDE_DIR) -c $< -o $@
 
 # Generate documentation with Doxygen
 docs:
