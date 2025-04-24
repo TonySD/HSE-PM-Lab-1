@@ -20,33 +20,25 @@ bool AutoInfo::operator!=(const AutoInfo& other) const {
 }
 
 bool AutoInfo::operator<(const AutoInfo& other) const {
-    if (licensePlate < other.licensePlate) {
-        return true;
+    if (licensePlate != other.licensePlate) {
+        return licensePlate < other.licensePlate;
     }
-
-        if (productionYear < other.productionYear) {
-            return true;
-        }
-
-        if (carBrand < other.carBrand) {
-            return true;
-        }
-
-        if (color < other.color) {
-            return true;
-        }
-
-        if (ownerName < other.ownerName) {
-            return true;
-        }
-        
-    return false;
-};
+    if (productionYear != other.productionYear) {
+        return productionYear < other.productionYear;
+    }
+    if (carBrand != other.carBrand) {
+        return carBrand < other.carBrand;
+    }
+    if (color != other.color) {
+        return color < other.color;
+    }
+    return ownerName < other.ownerName;
+}
     
 
 bool AutoInfo::operator>(const AutoInfo& other) const {
-    return !(*this < other);
-};
+    return other < *this;
+}
    
 bool AutoInfo::operator<=(const AutoInfo& other) const {
     return *this < other || *this == other;
