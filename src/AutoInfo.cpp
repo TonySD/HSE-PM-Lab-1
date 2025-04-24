@@ -1,5 +1,10 @@
 #include "AutoInfo.hpp"
 
+/**
+ * @file AutoInfo.cpp
+ * @brief Implementation of the AutoInfo class methods
+ */
+
 AutoInfo::AutoInfo() : ownerName(""), carBrand(""), productionYear(0), licensePlate(""), color("") {}
 
 AutoInfo::AutoInfo(const std::string& ownerName, const std::string& carBrand, int productionYear, const std::string& licensePlate, const std::string& color)
@@ -8,12 +13,12 @@ AutoInfo::AutoInfo(const std::string& ownerName, const std::string& carBrand, in
 AutoInfo::~AutoInfo() {}
 
 bool AutoInfo::operator==(const AutoInfo& other) const {
-        return licensePlate == other.licensePlate &&
-               productionYear == other.productionYear &&
-               carBrand == other.carBrand &&
-               color == other.color &&
-               ownerName == other.ownerName;
-    }
+    return licensePlate == other.licensePlate &&
+           productionYear == other.productionYear &&
+           carBrand == other.carBrand &&
+           color == other.color &&
+           ownerName == other.ownerName;
+}
 
 bool AutoInfo::operator!=(const AutoInfo& other) const {
     return !(*this == other);
@@ -35,15 +40,14 @@ bool AutoInfo::operator<(const AutoInfo& other) const {
     return ownerName < other.ownerName;
 }
     
-
 bool AutoInfo::operator>(const AutoInfo& other) const {
     return other < *this;
 }
    
 bool AutoInfo::operator<=(const AutoInfo& other) const {
     return *this < other || *this == other;
-};
+}
 
 bool AutoInfo::operator>=(const AutoInfo& other) const {
     return *this > other || *this == other;
-};
+}

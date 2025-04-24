@@ -1,0 +1,190 @@
+{
+    "100": [
+        {
+            "dataset": "datasets/csv/data_100_1.csv",
+            "times": {
+                "std::sort": 0.0001,
+                "SelectionSort": 0.0001,
+                "MergeSort": 0.0002,
+                "QuickSort": 0.0001
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_100_2.csv",
+            "times": {
+                "std::sort": 0.0001,
+                "SelectionSort": 0.0001,
+                "MergeSort": 0.0002,
+                "QuickSort": 0.0001
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_100_3.csv",
+            "times": {
+                "std::sort": 0.0001,
+                "SelectionSort": 0.0001,
+                "MergeSort": 0.0003,
+                "QuickSort": 0.0001
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_100_4.csv",
+            "times": {
+                "std::sort": 0.0001,
+                "SelectionSort": 0.0001,
+                "MergeSort": 0.0002,
+                "QuickSort": 0.0001
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_100_5.csv",
+            "times": {
+                "std::sort": 0.0001,
+                "SelectionSort": 0.0001,
+                "MergeSort": 0.0002,
+                "QuickSort": 0.0001
+            }
+        }
+    ],
+    "1000": [
+        {
+            "dataset": "datasets/csv/data_1000_1.csv",
+            "times": {
+                "std::sort": 0.0008,
+                "SelectionSort": 0.0135,
+                "MergeSort": 0.0027,
+                "QuickSort": 0.001
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_1000_2.csv",
+            "times": {
+                "std::sort": 0.0008,
+                "SelectionSort": 0.0139,
+                "MergeSort": 0.0029,
+                "QuickSort": 0.0012
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_1000_3.csv",
+            "times": {
+                "std::sort": 0.0007,
+                "SelectionSort": 0.0129,
+                "MergeSort": 0.0028,
+                "QuickSort": 0.0012
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_1000_4.csv",
+            "times": {
+                "std::sort": 0.0008,
+                "SelectionSort": 0.0128,
+                "MergeSort": 0.0027,
+                "QuickSort": 0.001
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_1000_5.csv",
+            "times": {
+                "std::sort": 0.0008,
+                "SelectionSort": 0.013,
+                "MergeSort": 0.0029,
+                "QuickSort": 0.001
+            }
+        }
+    ],
+    "10000": [
+        {
+            "dataset": "datasets/csv/data_10000_1.csv",
+            "times": {
+                "std::sort": 0.01,
+                "SelectionSort": 1.2672,
+                "MergeSort": 0.0339,
+                "QuickSort": 0.014
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_10000_2.csv",
+            "times": {
+                "std::sort": 0.0103,
+                "SelectionSort": 1.2562,
+                "MergeSort": 0.0353,
+                "QuickSort": 0.0142
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_10000_3.csv",
+            "times": {
+                "std::sort": 0.0102,
+                "SelectionSort": 1.3161,
+                "MergeSort": 0.0353,
+                "QuickSort": 0.0133
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_10000_4.csv",
+            "times": {
+                "std::sort": 0.0101,
+                "SelectionSort": 1.3245,
+                "MergeSort": 0.0352,
+                "QuickSort": 0.0134
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_10000_5.csv",
+            "times": {
+                "std::sort": 0.0104,
+                "SelectionSort": 1.2571,
+                "MergeSort": 0.0344,
+                "QuickSort": 0.0143
+            }
+        }
+    ],
+    "100000": [
+        {
+            "dataset": "datasets/csv/data_100000_1.csv",
+            "times": {
+                "std::sort": 0.136,
+                "SelectionSort": 137.1312,
+                "MergeSort": 0.4552,
+                "QuickSort": 0.1925
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_100000_2.csv",
+            "times": {
+                "std::sort": 0.1275,
+                "SelectionSort": 136.746,
+                "MergeSort": 0.467,
+                "QuickSort": 0.1832
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_100000_3.csv",
+            "times": {
+                "std::sort": 0.133,
+                "SelectionSort": 137.2666,
+                "MergeSort": 0.4293,
+                "QuickSort": 0.1849
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_100000_4.csv",
+            "times": {
+                "std::sort": 0.1299,
+                "SelectionSort": 135.2082,
+                "MergeSort": 0.5455,
+                "QuickSort": 0.2047
+            }
+        },
+        {
+            "dataset": "datasets/csv/data_100000_5.csv",
+            "times": {
+                "std::sort": 0.1309,
+                "SelectionSort": 135.3064,
+                "MergeSort": 0.4656,
+                "QuickSort": 0.1817
+            }
+        }
+    ]
+}

@@ -44,7 +44,7 @@ docs:
 	doxygen docs/Doxyfile
 	make -C $(DOCS_DIR)/latex
 	mv $(DOCS_DIR)/latex/refman.pdf $(DOCS_DIR)/lab-01.pdf
-	rm -rf $(DOCS_DIR)/html $(DOCS_DIR)/latex
+# rm -rf $(DOCS_DIR)/html $(DOCS_DIR)/latex
 
 # Clean build
 clean:
