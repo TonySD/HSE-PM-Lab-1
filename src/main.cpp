@@ -81,5 +81,25 @@ int main(int argc, char* argv[]) {
     // Quick sort
     sort_iteration(&autos, new QuickSort());
 
+    // Write sorted data to CSV file
+    std::cout << "[Debug] Writing sorted data to CSV file" << std::endl;
+    std::ofstream output_file("sorted_dataset.csv");
+    
+    if (!output_file.is_open()) {
+        std::cout << "[Error] Could not create output file sorted_dataset.csv" << std::endl;
+        return 1;
+    }
+    
+    for (const auto& car : autos_copy) {
+        output_file << car.carBrand << ";"
+                    << car.ownerName << ";"
+                    << car.productionYear << ";"
+                    << car.licensePlate << ";"
+                    << car.color << std::endl;
+    }
+    
+    output_file.close();
+    std::cout << "[Debug] Sorted data successfully written to sorted_dataset.csv" << std::endl;
+
     return 0;
 }
