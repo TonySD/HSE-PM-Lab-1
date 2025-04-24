@@ -4,11 +4,14 @@
 
 class SortMethod {
 public:
+    std::string name;
+    SortMethod(const std::string& method_name) : name(method_name) {}
     virtual void sort(std::vector<AutoInfo>& arr) = 0;
 };
 
 class SelectionSort : public SortMethod {
 public:
+    SelectionSort() : SortMethod("SelectionSort") {}
     void sort(std::vector<AutoInfo>& arr) override;
 };
 
@@ -18,6 +21,7 @@ private:
     void quickSortHelper(std::vector<AutoInfo>& arr, size_t low, size_t high);
 
 public:
+    QuickSort() : SortMethod("QuickSort") {}
     void sort(std::vector<AutoInfo>& arr) override;
 };
 
@@ -28,5 +32,6 @@ private:
     void mergeSortHelper(std::vector<AutoInfo>& arr, size_t left, size_t right);
 
 public:
+    MergeSort() : SortMethod("MergeSort") {}
     void sort(std::vector<AutoInfo>& arr) override;
 };
