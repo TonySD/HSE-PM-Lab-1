@@ -1,3 +1,4 @@
+#pragma once
 #include "AutoInfo.hpp"
 #include <vector>
 
