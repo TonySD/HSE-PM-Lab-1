@@ -4,3 +4,4 @@ docs/latex/**
 build/**
 bin/**
 datasets/csv/**
+sorted_dataset.csv

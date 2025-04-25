@@ -5,8 +5,9 @@ import random
 import time
 from pathlib import Path
 
-DATASET_SIZES = [100, 1000, 10000, 100000]
-DATASETS_PER_SIZE = 5
+AMOUNT_OF_RUNS = 20
+DATASET_SIZES = [int(100 + i * ((100000 - 100) / AMOUNT_OF_RUNS)) for i in range(AMOUNT_OF_RUNS)] # [100, 1000, 10000, 100000]
+DATASETS_PER_SIZE = 1
 CSV_DIR = "datasets/csv"
 BINARY_PATH = "bin/lab-01.elf"
 RESULTS_FILE = "datasets/sort_results.json"
